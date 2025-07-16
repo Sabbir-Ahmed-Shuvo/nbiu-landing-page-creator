@@ -14,56 +14,56 @@ export function HeroSection() {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto animate-fade-in-up">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-5xl mx-auto animate-fade-in-up">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-accent-light/20 backdrop-blur-sm border border-accent-light/30 rounded-full px-6 py-2 mb-6">
-            <Award className="w-5 h-5 text-accent" />
-            <span className="text-primary-foreground font-medium">UGC Approved • Founded 2013</span>
+          <div className="inline-flex items-center gap-2 bg-accent-light/20 backdrop-blur-sm border border-accent-light/30 rounded-full px-4 sm:px-6 py-2 mb-4 sm:mb-6">
+            <Award className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
+            <span className="text-sm sm:text-base text-primary-foreground font-medium">UGC Approved • Founded 2013</span>
           </div>
           
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            North Bengal <br />
-            <span className="text-accent">International</span> <br />
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground mb-4 sm:mb-6 leading-tight">
+            North Bengal <br className="hidden sm:block" />
+            <span className="text-accent">International</span> <br className="hidden sm:block" />
             University
           </h1>
           
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-primary-foreground/90 mb-3 sm:mb-4 leading-relaxed px-4 sm:px-0">
             Unlock Your Future in the Heart of Rajshahi
           </p>
           
           {/* Location */}
-          <div className="flex items-center justify-center gap-2 text-primary-foreground/80 mb-8">
-            <MapPin className="w-5 h-5" />
-            <span className="text-lg">Rajshahi, Bangladesh</span>
+          <div className="flex items-center justify-center gap-2 text-primary-foreground/80 mb-6 sm:mb-8">
+            <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
+            <span className="text-base sm:text-lg">Rajshahi, Bangladesh</span>
           </div>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="accent" size="xl" className="min-w-[200px]">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
+            <Button variant="accent" size="xl" className="w-full sm:w-auto min-w-[200px] h-12 sm:h-14 text-base sm:text-lg">
               Apply Now
               <ChevronRight className="w-5 h-5" />
             </Button>
-            <Button variant="outline" size="xl" className="min-w-[200px] bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20">
+            <Button variant="outline" size="xl" className="w-full sm:w-auto min-w-[200px] h-12 sm:h-14 text-base sm:text-lg bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20">
               Explore Programs
             </Button>
           </div>
           
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-primary-foreground/20">
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-primary-foreground/20">
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent mb-2">11+</div>
-              <div className="text-primary-foreground/80">Years of Excellence</div>
+              <div className="text-2xl sm:text-3xl font-bold text-accent mb-1 sm:mb-2">11+</div>
+              <div className="text-xs sm:text-sm text-primary-foreground/80">Years of Excellence</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent mb-2">4</div>
-              <div className="text-primary-foreground/80">Faculties</div>
+              <div className="text-2xl sm:text-3xl font-bold text-accent mb-1 sm:mb-2">4</div>
+              <div className="text-xs sm:text-sm text-primary-foreground/80">Faculties</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent mb-2">15+</div>
-              <div className="text-primary-foreground/80">Programs</div>
+              <div className="text-2xl sm:text-3xl font-bold text-accent mb-1 sm:mb-2">15+</div>
+              <div className="text-xs sm:text-sm text-primary-foreground/80">Programs</div>
             </div>
           </div>
         </div>
