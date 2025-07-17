@@ -5,6 +5,7 @@ import { ProgramsSection } from "@/components/ProgramsSection";
 import { AdmissionSection } from "@/components/AdmissionSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import { PresentationSlide } from "@/components/PresentationSlide";
 
 const Index = () => {
   return (
@@ -13,6 +14,10 @@ const Index = () => {
       
       <main>
         <HeroSection />
+        
+        <section id="presentation" className="py-20">
+          <PresentationSlide />
+        </section>
         
         <section id="about">
           <WhyChooseSection />
